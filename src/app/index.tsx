@@ -4,14 +4,18 @@ import NameComponent from '../components/NameComponent'
 import AgeComponent from '../components/AgeComponent'
 import XHandleComponent from '../components/XHandleComponent'
 import FavSubjectComponent from '../components/FavSubjectComponent'
+import ImageComponent from '../components/ImageComponent'
+import ProfileCardComponent from '../components/ProfileCardComponent'
 
 const Index = () => {
   return (
     <View>
-      <NameComponent />
+      <ProfileCardComponent />
+      {/* <ImageComponent /> */}
+      {/* <NameComponent />
       <AgeComponent />
       <XHandleComponent />
-      <FavSubjectComponent />
+      <FavSubjectComponent /> */}
     </View>
   )
 }
