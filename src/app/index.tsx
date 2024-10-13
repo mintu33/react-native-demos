@@ -6,11 +6,13 @@ import XHandleComponent from '../components/XHandleComponent'
 import FavSubjectComponent from '../components/FavSubjectComponent'
 import ImageComponent from '../components/ImageComponent'
 import ProfileCardComponent from '../components/ProfileCardComponent'
+import DynamicContentComponent from '../components/DynamicContentComponent'
 
 const Index = () => {
   return (
     <View>
-      <ProfileCardComponent />
+      <DynamicContentComponent />
+      {/* <ProfileCardComponent /> */}
       {/* <ImageComponent /> */}
       {/* <NameComponent />
       <AgeComponent />

@@ -19,9 +19,36 @@ const st = StyleSheet.create({
         alignItems: 'center'
     },
     cardImageStyle: {
-        width:300,
-        height:300,
-        borderRadius:150
+        width:200,
+        height:200,
+        borderRadius:150,
+        marginBottom: 20
+    },
+    cardStyle: {
+        padding:10,
+        paddingTop: 50,
+        paddingBottom: 40,
+        margin: 20,
+        shadowColor: "black",
+        // width: "70%",
+        // height: "110%",
+        borderRadius: 5,
+        shadowOffset: {width:0, height:2},
+        elevation: 5,
+        shadowOpacity: 0.25,
+        shadowRadius: 3.84,
+        alignItems: 'center'
+
+    },
+
+    heading:{
+        fontSize: 30,
+        marginBottom: 10
+    },
+
+    text:{
+        fontSize: 15,
+        marginBottom: 15,
     }
 })
 
