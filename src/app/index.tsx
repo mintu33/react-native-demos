@@ -7,11 +7,13 @@ import FavSubjectComponent from '../components/FavSubjectComponent'
 import ImageComponent from '../components/ImageComponent'
 import ProfileCardComponent from '../components/ProfileCardComponent'
 import DynamicContentComponent from '../components/DynamicContentComponent'
+import CarComponent from '../components/CarComponent'
 
 const Index = () => {
   return (
     <View>
-      <DynamicContentComponent />
+      <CarComponent/>
+      {/* <DynamicContentComponent /> */}
       {/* <ProfileCardComponent /> */}
       {/* <ImageComponent /> */}
       {/* <NameComponent />
