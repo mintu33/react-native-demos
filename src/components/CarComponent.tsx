@@ -1,15 +1,25 @@
-import { View, Text, Button, Image, StyleSheet } from 'react-native'
+import { View, Text, Image, StyleSheet, Pressable, Alert } from 'react-native'
 import React from 'react'
 
+const onPressFunction = () => {alert('Added to Cart!')}  
+
 const CarComponent = () => {
+  const price = 2000000;
+  const imagepath = "../assets/images/car.jpg";
+  const name = "Lamborghini Urus";
+  const rating = "★★★★☆";
+  const description = "Lamborghini Urus is the world’s first Super Sport Utility Vehicle, where exclusivity, sportiness, and performance meet comfort and versatility. It offers best-in-class driving dynamics and unmistakable elegance in design. Urus embodies the characteristics of multiple souls: sporty, elegant, and off-road. The range is geared toward the future, ushering in a new era with the first PHEV (Plug-in Hybrid Electric Vehicle) version of the luxury Super SUV. With its unparalleled performance, a fun-to-drive experience, and a pioneering spirit, Lamborghini Urus is anything but typical. ";
+  
   return (
     <View>
-      <Text style = {st.priceStyle}> $200,000 </Text>
-      <Image source={require('../assets/images/car.jpg')} style = {st.imageStyle}/>
-      <Text style = {st.nameStyle}> Car Name </Text>
-      <Text> Rating: 3.5 </Text>
-      <Text style = {st.descStyle}> Here is some random car description </Text>
-      <Button title='Add To Cart'/>
+      <Text style = {st.priceStyle}> {new Intl.NumberFormat('en-US',{style: 'currency', currency: 'USD'}).format(price)} </Text>
+      <Image source={require(imagepath)} style = {st.imageStyle}/>
+      <Text style = {st.nameStyle}> {name}</Text>
+      <Text style = {st.ratingStyle}> {rating} </Text>
+      <Text style = {st.descStyle}> {description}</Text>
+      <Pressable onPress={onPressFunction}>
+        <Text style = {st.cartStyle}> Add To Cart </Text>
+      </Pressable>
     </View>
   )
 }
@@ -17,15 +27,15 @@ const CarComponent = () => {
 const st = StyleSheet.create({
     priceStyle: {
         color: "white",
-        fontSize: 25,
+        fontSize: 20,
         fontWeight: 'bold',
         backgroundColor: "black",
         alignItems: 'center',
-        paddingHorizontal: 3,
-        paddingVertical: 2,
+        paddingHorizontal: 20,
+        paddingVertical: 4,
         borderRadius:8,
-        width: 140,
-        height: 30,
+        width: 200,
+        height: 40,
         marginBottom: 15,
         marginLeft: 15,
         marginTop: 15,
@@ -45,9 +55,33 @@ const st = StyleSheet.create({
         marginBottom: 15,
     },
 
+    ratingStyle: {
+        fontSize: 15,
+        fontWeight: '500',
+        marginLeft: 15,
+        marginBottom: 15,
+    },
+
     descStyle: {
         fontSize: 15,
+        fontWeight: 200,
+        marginLeft: 15,
+        marginBottom: 15
 
+    },
+
+    cartStyle: {
+        color: "white",
+        fontSize: 20,
+        backgroundColor: "black",
+        alignItems: 'center',
+        paddingHorizontal: 37,
+        paddingVertical: 8,
+        borderRadius:8,
+        width: 200,
+        height: 40,
+        marginBottom: 15,
+        marginLeft: 15,
     }
 
     })
