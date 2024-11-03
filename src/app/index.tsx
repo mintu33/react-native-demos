@@ -8,11 +8,15 @@ import ImageComponent from '../components/ImageComponent'
 import ProfileCardComponent from '../components/ProfileCardComponent'
 import DynamicContentComponent from '../components/DynamicContentComponent'
 import CarComponent from '../components/CarComponent'
+import ListData from '../components/ListData'
+import ArrayOfObject from '../components/ArrayOfObject'
 
 const Index = () => {
   return (
     <View>
-      <CarComponent/>
+      <ArrayOfObject/>
+      {/* <ListData/> */}
+      {/* <CarComponent/> */}
       {/* <DynamicContentComponent /> */}
       {/* <ProfileCardComponent /> */}
       {/* <ImageComponent /> */}
