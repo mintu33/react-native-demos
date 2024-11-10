@@ -10,11 +10,13 @@ import DynamicContentComponent from '../components/DynamicContentComponent'
 import CarComponent from '../components/CarComponent'
 import ListData from '../components/ListData'
 import ArrayOfObject from '../components/ArrayOfObject'
+import Products from '../components/Products'
 
 const Index = () => {
   return (
     <View>
-      <ArrayOfObject/>
+      <Products/>
+      {/* <ArrayOfObject/> */}
       {/* <ListData/> */}
       {/* <CarComponent/> */}
       {/* <DynamicContentComponent /> */}
