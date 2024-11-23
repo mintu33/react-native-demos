@@ -8,7 +8,7 @@ const NameComponent = () => {
         <View style={st.boxStyle}>
             <Text style = {st.textStyle} >
                 Hello my name is Khushi.
-                <br />
+                
                 My friend's name is Rochelle.
             </Text>
         </View>

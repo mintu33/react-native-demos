@@ -8,7 +8,6 @@ const FavSubjectComponent = () => {
         <View style={st.boxStyle}>
             <Text style = {st.textStyle}>
                 My favourite subject is MATHS.
-                <br />
                 Rochelle's favourite subject is MUSIC.
             </Text>
         </View>

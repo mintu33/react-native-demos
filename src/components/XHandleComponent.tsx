@@ -8,7 +8,7 @@ const XHandleComponent = () => {
     <View style={st.boxStyle}>
         <Text style = {st.textStyle}>
             My Xhandle: khuship1234.
-            <br />
+            
             Rochelle's Xhandle: rochelle1234.
         </Text>
     </View>
