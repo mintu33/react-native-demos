@@ -1,53 +1,51 @@
-import { View, Text, FlatList, Image, StyleSheet } from 'react-native';
+import { View, Text, FlatList, Image, StyleSheet } from 'react-native'
 import React from 'react';
 
 const HugeComponent = () => {
-    interface Product {
+    interface Student {
         image: string;
         name: string;
-        price: number;
-        rating: number;
+        rollnum: number;
+        grade: number;
     }
 
-    const products = [
+    const students = [
         {
             image: "https://picsum.photos/200/300?random=1",
-            name: "Product 1",
-            rating: 4.5,
-            price: 29.99,
+            name: "Student1",
+            rollnum: 12345,
+            grade: 11,
         },
         {
             image: "https://picsum.photos/200/300?random=1",
-            name: "Product 1",
-            rating: 4.5,
-            price: 29.99,
+            name: "Student2",
+            rollnum: 18237,
+            grade: 11,
         },{
             image: "https://picsum.photos/200/300?random=1",
-            name: "Product 1",
-            rating: 4.5,
-            price: 29.99,
+            name: "Student3",
+            rollnum: 92802,
+            grade: 11,
         },{
             image: "https://picsum.photos/200/300?random=1",
-            name: "Product 1",
-            rating: 4.5,
-            price: 29.99,
-        },
-        // ... other products
-        {
-            image: "https://picsum.photos/200/300?random=50",
-            name: "Product 50",
-            rating: 4.3,
-            price: 32.99,
+            name: "Student4",
+            rollnum: 12389,
+            grade: 11,
+        },{
+            image: "https://picsum.photos/200/300?random=1",
+            name: "Student5",
+            rollnum: 72931,
+            grade: 11,
         },
     ];
 
-    const renderItem = ({ item }: { item: Product }) => {
+    const renderItem = ({ item }: { item: Student }) => {
         return (
-            <View style={styles.productContainer}>
+            <View style={styles.studentContainer}>
                 <Image source={{ uri: item.image }} style={styles.image} />
-                <Text style={styles.name}>{item.name}</Text>
-                <Text style={styles.rating}>Rating: {item.rating}</Text>
-                <Text style={styles.price}>Price: ${item.price}</Text>
+                <Text style={[styles.name, styles.underlinedText]}>{item.name}</Text>
+                <Text style={styles.rollnum}>Rollnum: {item.rollnum}</Text>
+                <Text style={styles.grade}>Grade: {item.grade}</Text>
             </View>
         );
     };
@@ -57,20 +55,20 @@ const HugeComponent = () => {
             <Text>Flatlist</Text>
             
                 <FlatList
-                data={products}
+                data={students}
                 keyExtractor={(item, index) => index.toString()}
                 renderItem={renderItem}
             />
-          
+        
         </View>
     );
-};
+ };
 
 const styles = StyleSheet.create({
     container: {
         flex: 1
       },
-    productContainer: {
+    studentContainer: {
         flex: 1,
         alignItems: 'center',
         padding: 10,
@@ -89,16 +87,20 @@ const styles = StyleSheet.create({
         borderRadius: 10,
     },
     name: {
-        fontSize: 18,
+        fontSize: 20,
         fontWeight: 'bold',
         marginTop: 10,
     },
-    rating: {
+    underlinedText: {
+        fontSize: 18,
+        textDecorationLine: 'underline', //Adds underline
+    },
+    rollnum: {
         fontSize: 16,
-        color: '#888',
+        color: '#000',
         marginTop: 5,
     },
-    price: {
+    grade: {
         fontSize: 16,
         color: '#000',
         marginTop: 5,

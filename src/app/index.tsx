@@ -11,11 +11,13 @@ import CarComponent from '../components/CarComponent'
 import ListData from '../components/ListData'
 import ArrayOfObject from '../components/ArrayOfObject'
 import Products from '../components/Products'
+import Students from '../components/Students'
 
 const Index = () => {
   return (
     <View>
-      <Products/>
+      <Students/>
+      {/* <Products/> */}
       {/* <ArrayOfObject/> */}
       {/* <ListData/> */}
       {/* <CarComponent/> */}
