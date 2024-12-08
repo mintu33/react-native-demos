@@ -12,12 +12,14 @@ import ListData from '../components/ListData'
 import ArrayOfObject from '../components/ArrayOfObject'
 import Products from '../components/Products'
 import Students from '../components/Students'
+import ParentComponent from '../components/ParentComponent'
 
 const Index = () => {
   return (
     <View>
-      <Students/>
-      {/* <Products/> */}
+      {/* <ParentComponent/> */}
+      {/* <Students/> */}
+      <Products/>
       {/* <ArrayOfObject/> */}
       {/* <ListData/> */}
       {/* <CarComponent/> */}

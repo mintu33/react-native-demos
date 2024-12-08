@@ -1,5 +1,6 @@
 import { View, Text, FlatList, Image, StyleSheet } from 'react-native';
 import React from 'react';
+import Product from './Product';
 
 const HugeComponent = () => {
     interface Product {
@@ -59,7 +60,9 @@ const HugeComponent = () => {
                 <FlatList
                 data={products}
                 keyExtractor={(item, index) => index.toString()}
-                renderItem={renderItem}
+                renderItem={({item}) => (
+                    <Product item={item}/>
+                )}
             />
           
         </View>
