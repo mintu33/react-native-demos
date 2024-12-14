@@ -13,13 +13,15 @@ import ArrayOfObject from '../components/ArrayOfObject'
 import Products from '../components/Products'
 import Students from '../components/Students'
 import ParentComponent from '../components/ParentComponent'
+import ConditionalStatements from '../components/ConditionalStatements'
 
 const Index = () => {
   return (
     <View>
+      <ConditionalStatements/>
       {/* <ParentComponent/> */}
       {/* <Students/> */}
-      <Products/>
+      {/* <Products/> */}
       {/* <ArrayOfObject/> */}
       {/* <ListData/> */}
       {/* <CarComponent/> */}
