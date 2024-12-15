@@ -14,11 +14,15 @@ import Products from '../components/Products'
 import Students from '../components/Students'
 import ParentComponent from '../components/ParentComponent'
 import ConditionalStatements from '../components/ConditionalStatements'
+import AndOperator from '../components/AndOperator'
+import TernaryOperator from '../components/TernaryOperator'
 
 const Index = () => {
   return (
     <View>
-      <ConditionalStatements/>
+      <TernaryOperator/>
+      {/* <AndOperator/> */}
+      {/* <ConditionalStatements/> */}
       {/* <ParentComponent/> */}
       {/* <Students/> */}
       {/* <Products/> */}
