@@ -16,11 +16,15 @@ import ParentComponent from '../components/ParentComponent'
 import ConditionalStatements from '../components/ConditionalStatements'
 import AndOperator from '../components/AndOperator'
 import TernaryOperator from '../components/TernaryOperator'
+import WithoutState from '../components/WithoutState'
+import WithState from '../components/WithState'
 
 const Index = () => {
   return (
     <View>
-      <TernaryOperator/>
+      <WithState/>
+      {/* <WithoutState/> */}
+      {/* <TernaryOperator/> */}
       {/* <AndOperator/> */}
       {/* <ConditionalStatements/> */}
       {/* <ParentComponent/> */}
