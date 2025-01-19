@@ -18,11 +18,13 @@ import AndOperator from '../components/AndOperator'
 import TernaryOperator from '../components/TernaryOperator'
 import WithoutState from '../components/WithoutState'
 import WithState from '../components/WithState'
+import ToDo from '../components/ToDo'
 
 const Index = () => {
   return (
     <View>
-      <WithState/>
+      <ToDo/>
+      {/* <WithState/> */}
       {/* <WithoutState/> */}
       {/* <TernaryOperator/> */}
       {/* <AndOperator/> */}
