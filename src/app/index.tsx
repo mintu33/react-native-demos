@@ -19,11 +19,13 @@ import TernaryOperator from '../components/TernaryOperator'
 import WithoutState from '../components/WithoutState'
 import WithState from '../components/WithState'
 import ToDo from '../components/ToDo'
+import UpdateObject from '../components/UpdateObject'
 
 const Index = () => {
   return (
     <View>
-      <ToDo/>
+      <UpdateObject/>
+      {/* <ToDo/> */}
       {/* <WithState/> */}
       {/* <WithoutState/> */}
       {/* <TernaryOperator/> */}

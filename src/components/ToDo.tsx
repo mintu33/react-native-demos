@@ -8,18 +8,19 @@ const ToDo = () => {
         return (
             <View style={styles.itemCard}>
                 <Text> {item}</Text>
-
-                <Button title='Edit'
-                    color='magenta'
-                    onPress={() => {
-                        alert("Edit")
-                    }}
-                />
-                <Button title='Delete'
-                    color='#E35335'
-                    onPress={() => {
-                        setTodos(todos.filter(todo => todo !== item))
-                    }} />
+                <View style={styles.buttons}>
+                    <Button title='Edit'
+                        color='magenta'
+                        onPress={() => {
+                            alert("Edit")
+                        }}
+                    />
+                    <Button title='Delete'
+                        color='#E35335'
+                        onPress={() => {
+                            setTodos(todos.filter(todo => todo !== item))
+                        }} />
+                </View>
             </View>
         )
     }
@@ -78,6 +79,11 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         flexDirection: 'row',
         justifyContent: 'space-between'
+    },
+
+    buttons: {
+        display: "flex",
+        flexDirection: "row"
     }
 })
 
