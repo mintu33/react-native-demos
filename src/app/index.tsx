@@ -20,11 +20,14 @@ import WithoutState from '../components/WithoutState'
 import WithState from '../components/WithState'
 import ToDo from '../components/ToDo'
 import UpdateObject from '../components/UpdateObject'
+import ComponentOne from '../components/ComponentOne'
+import SharingState from '../components/SharingState'
 
 const Index = () => {
   return (
     <View>
-      <UpdateObject/>
+      <SharingState/>
+      {/* <UpdateObject/> */}
       {/* <ToDo/> */}
       {/* <WithState/> */}
       {/* <WithoutState/> */}

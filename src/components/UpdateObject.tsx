@@ -7,18 +7,21 @@ const UpdateObject = () => {
         rating: 8
     })
 
+    const [newRating, setNewRating] = useState(0)
+
     const handleClick = () => {
-        setMovie({...movie, rating: 5})
+        setMovie({ ...movie, rating: newRating })
     }
 
-  return (
-    <View>
-      <Text>Title: {movie.title} </Text>
-      <Text>Rating: {movie.rating} </Text>
-      <TextInput placeholder='Enter rating: ' value={movie.rating.toString()} onChangeText={(args) => setMovie({...movie,rating: parseInt(args)})}/>
-      <Button title='Change rating' onPress={handleClick} />
-    </View>
-  )
+    return (
+        <View>
+            <Text>Title: {movie.title} </Text>
+            <Text>Rating: {movie.rating} </Text>
+            <TextInput placeholder='Enter rating: ' value={newRating.toString()} onChangeText={(args) => setNewRating(Number(args))}/>
+            <Button title='Change rating' onPress={handleClick}/>
+
+        </View>
+    )
 }
 
 export default UpdateObject
