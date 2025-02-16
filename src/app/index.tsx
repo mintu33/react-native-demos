@@ -22,11 +22,13 @@ import ToDo from '../components/ToDo'
 import UpdateObject from '../components/UpdateObject'
 import ComponentOne from '../components/ComponentOne'
 import SharingState from '../components/SharingState'
+import ToggleButton from '../components/ToggleButton'
 
 const Index = () => {
   return (
     <View>
-      <SharingState/>
+      <ToggleButton/>
+      {/* <SharingState/> */}
       {/* <UpdateObject/> */}
       {/* <ToDo/> */}
       {/* <WithState/> */}
