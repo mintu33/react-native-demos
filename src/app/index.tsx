@@ -24,11 +24,13 @@ import ComponentOne from '../components/ComponentOne'
 import SharingState from '../components/SharingState'
 import ToggleButton from '../components/ToggleButton'
 import RandomToggleColor from '../components/RandomToggleColor'
+import WeatherApp from '../components/WeatherApp'
 
 const Index = () => {
   return (
     <View>
-      <RandomToggleColor/>
+      <WeatherApp/>
+      {/* <RandomToggleColor/> */}
       {/* <ToggleButton/> */}
       {/* <SharingState/> */}
       {/* <UpdateObject/> */}
